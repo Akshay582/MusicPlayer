@@ -1,0 +1,525 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body{
+	background-color: #00003F;
+	font-family: verdana;
+}
+
+#page{
+	display: inline-block;
+	float: left;
+	margin-left: 5%;
+	max-width: 70%;
+}
+
+/*----- nav-bar -----*/
+
+#nav-bar{
+	background-color: #00002F;
+	position: sticky;
+	top: 0;
+	box-shadow: 0px 6px 6px 0px black;
+}
+
+.topnav a{
+	color: whitesmoke;
+	text-decoration: none;
+}
+
+.topnav a img{
+	height: 42px;
+	width: 42px;
+}
+
+.right-side{
+	color: white;
+	display: inline;
+	float: right;
+	margin: 0;
+	text-align: center;
+}
+
+.right-side li{
+	text-align: center;
+	display: inline;
+	list-style: none;
+}
+
+.profile-pic img{
+	border-radius: 50%;
+}
+
+/*---- home-screen-carousel ----*/
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+.block {display:block;}
+
+/* Slideshow container */
+.slideshow-container {
+  top: 20px;
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.mySlides img{
+	height: 420px;
+	width: 320px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 10px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*----h2-----*/
+h2 {
+	color: white;
+}
+
+/*latest releases flex box */
+
+/*--- button---*/
+
+.dropdown{
+	margin-top: 1%;
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: lightgrey;
+	min-width: 180px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	font-family: cursive;
+	z-index: 1;
+}
+
+.dropdown-content a:hover{
+	background-color: #ddd;
+}
+
+.show {
+	display: block;
+}
+
+.dropbtn{
+	background-color: #00003F;
+	color: whitesmoke;
+	padding: 10px;
+	font-size: 14px;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus{
+	box-shadow:  0px 0px 6px 2px lightgoldenrodyellow;
+}
+
+.dropdown-content a {
+	color: black;
+	text-decoration: none;
+	padding-left: 12px;
+	display: block;
+}
+
+#queue .section > button i{
+	font-size: 0.5rem;
+}
+
+.grid2x2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.grid2x2 > div {
+  display: flex;
+  flex-basis: calc(40% - 40px);
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.grid2x2 > div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.description{
+	padding: 2%;
+	min-width: 50%;
+}
+
+.time{
+	padding: 10px 10px 10px 5px;
+	color: antiquewhite;
+}
+
+.description{
+	display: flex;
+	flex-direction: row;
+}
+
+.grid2x2 > div > aside{
+	display: inline-block;
+	align-content: flex-end;
+}
+
+.box {
+	margin: 0px 20px 20px 0px;
+	min-width: 45%;
+}
+
+.box div img{
+	height: 150px;
+	width: 150px;
+}
+
+.box1, .box2, .box3, .box4{
+	color: floralwhite;
+}
+
+/*Popular Artists*/
+
+#popular-artists{
+	margin-bottom: 3%;
+}
+
+.pop-artist{
+	margin: 0;
+	margin-right: 1%;
+	display: inline-block;
+	font-size: 80%;
+	color: white;
+	text-align: center;
+	font-size: 0.9rem;
+}
+
+.pop-artist img{
+	height: 140px;
+	width: 140px;
+	border-radius: 50%;
+	padding: 3%;
+}
+
+/*-----mood for love, retro, etc.-----*/
+
+#mood{
+	margin-top: 10px;
+	margin-bottom: 2%;
+	background-color: #00005F;
+	padding: 10px;
+	letter-spacing: 0.1rem;
+	box-shadow: 2px 6px 6px 2px #00002F;
+}
+
+.mood1, .mood2{
+	display: inline-block;
+	margin: 10px;
+	margin-left: 15px;
+	position: relative;
+	text-align: center;
+	color: white;
+	vertical-align: center;
+}
+
+.centered{
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-family: serif;
+}
+
+.bottom{
+	 position: absolute;
+     bottom: 18px;
+     right: 25%;
+	opacity: 1;
+}
+
+.mood1 img{
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	opacity: 0.6;
+	filter: grayscale(100%);
+	filter: blur(1px);
+}
+
+.mood2 img{
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+}
+
+/*----random playlist for party, electronic, road trip, etc.-----*/
+
+#random-playlist a img{
+	margin: 10px;
+	height: 150px;
+	width: 290px;
+	opacity: 0.7;
+}
+
+.playlists{
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+}
+
+.playlists a img{
+	transition: transform 0.5s ease;
+}
+
+.playlists:hover a img{
+	transform: scale(1.5);
+	filter: blur(5px);
+}
+
+.centered1{
+	position: absolute;
+	font-size: 2rem;
+	font-family: fantasy;
+	letter-spacing: 0.1rem;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*languages*/
+.album-art{
+	display: inline-block;
+	margin: 0;
+	margin-right: 1%;
+}
+
+.album-art img{
+	height: 174px;
+	width: 174px;
+}
+
+.album-art figcaption{
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+}
+
+.artist-language{
+	font-size: 0.8rem;
+	color: white;
+}
+
+/*language1-latest*/
+#language1-latest{
+	margin: 0;
+}
+
+/*language2-latest*/
+#language2-latest{
+	margin-bottom: 8%;
+}
+
+/*queue*/
+
+.section{
+	height: 50px;
+}
+
+#queue{
+	margin-left: 1%;
+	padding-top: 2%;
+	width: 20%;
+	display: inline-block;
+	vertical-align: top;
+	color: whitesmoke;
+}
+
+.queue-heading{
+	margin-top: 0;
+	display: inline-block;
+	float: left;
+}
+
+#queue .section .dropdown1 button{
+	color: skyblue;
+	background-color: #00003F;
+	border-width: 0;
+}
+
+#queue .section .dropdown1 button i{
+	font-size: 0.5rem;
+}
+
+/*--- button 1 on the right side of the queue ---*/
+
+.dropdown1{
+	margin-top: 1%;
+	position: relative;
+	display: inline-block;
+	float: right;
+	color: skyblue;
+}
+
+.dropdown1-content{
+	display: none;
+	position: absolute;
+	background-color: lightgrey;
+	min-width: 180px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	font-family: cursive;
+	z-index: 1;
+}
+
+.dropdown1-content a:hover{
+	background-color: #ddd;
+}
+
+.show1 {
+	display: block;
+}
+
+.dropbtn1{
+	background-color: #00003F;
+	color: whitesmoke;
+	padding: 10px;
+	font-size: 14px;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.dropbtn1:hover, .dropbtn1:focus{
+	box-shadow:  0px 0px 6px 2px lightgoldenrodyellow;
+}
+
+.dropdown1-content a {
+	color: black;
+	text-decoration: none;
+	padding-left: 12px;
+	display: block;
+}
+
+#queue .section > button i{
+	font-size: 0.5rem;
+}
+
+.flex-queue{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.queue-list{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	background-color: #00003F;
+	padding: 0 15px 0 15px;
+	margin: 2px 0 2px 0;
+	font-size: 0.8rem;
+	color: lightgrey;
+}
+
+.queue-list img{
+	height: 45px;
+	width: 45px;
+}
+
+.queue-name{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.favorite{
+	margin-left: 30%;
+	background-color: #00003F;
+	color: lightgrey;
+	border-width: 0;
+}
+
+/*Music Player*/
+
+#music-player{
+	width: 100%;
+	background-color: #F1F3F5;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+}

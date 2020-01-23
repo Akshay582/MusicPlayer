@@ -1,0 +1,293 @@
+html, body{
+	background-color: #0C1027;
+	font-family: 'Open Sans', sans-serif;
+	color: whitesmoke;
+}
+
+/*----- nav-bar -----*/
+
+#nav-bar{
+	background-color: #0C1027;
+	position: sticky;
+	top: 0;
+	box-shadow: 0px 6px 6px 0px black;
+}
+
+.topnav a{
+	color: whitesmoke;
+	text-decoration: none;
+}
+
+.topnav a img{
+	height: 42px;
+	width: 42px;
+}
+
+.right-side{
+	color: white;
+	display: inline;
+	float: right;
+	margin: 0;
+	text-align: center;
+}
+
+.right-side li{
+	text-align: center;
+	display: inline;
+	list-style: none;
+}
+
+.profile-pic img{
+	border-radius: 50%;
+}
+
+/*main*/
+main{
+	display: inline-block;
+	padding: 3% 0 0 5%;
+	width: 65%;
+	float: left;
+}
+
+/*description about the artist*/
+
+#artist-description{
+	display: inline-block;
+	background-color: #141B41;
+	width: 100%;
+	letter-spacing: 0.1rem;
+}
+
+/*write-up of the arist*/
+
+#artist-description{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+#artist-description p{
+	padding-left: 2.5%;
+	color: lightgray;
+}
+
+.description{
+	font-size: 0.9rem;
+}
+
+.about-coldplay{
+	padding-left: 5%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 55%;
+}
+
+.metadata{
+	margin: 1% 0 0 0;
+	font-size: 0.7rem;
+}
+
+#artist-description div div{
+	color: #FDFDFD;
+	vertical-align: top;
+}
+
+.artist-header{
+	display: inline-block;
+	margin: 5% 10px 0 2%;
+	height: 2.5rem;
+}
+
+.artist-header h2{
+	display: inline-block;
+	margin-right: 20%;
+}
+
+.followers{
+	margin-top: 6%;
+	display: inline-block;
+	float: right;
+	color: lightgray;
+}
+
+.image-container{
+	display: inline-block;
+	background-image: url("https://www.aceshowbiz.com/images/photo/coldplay.jpg");
+	height: 320px;
+	width: 320px;
+	box-shadow: 0px -30px 38px 28px #141B41 inset;
+	opacity: 0.8;
+}
+
+#artist-description div p{
+	display: inline-block;
+}
+
+/*button to "play all" songs of the artist and follow for the user*/
+
+form{
+	margin-top: 4%;
+	margin-left: 2%;
+}
+
+form button{
+	font-size: 1.2rem;
+}
+
+.play{
+	margin-right: 15%;
+	border-width: 0;
+	height: 100%;
+	width: 35%;
+	color: white;
+	background-image: linear-gradient(to right, blue, purple);
+}
+
+.follow{
+	background-color: #141B41;
+	color: lightgray;
+	border-width: 0;
+}
+
+/*all songs underneath the artist header*/
+
+.flex-songs{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.songs-list{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin: 2% 0 0 0;
+	width: 100%;
+	background-color: #1A1E33;
+	height: 15vh;
+}
+
+.number{
+	padding-top: 5%;
+	padding-left: 2%;
+}
+
+.songs-list img{
+	padding-top: 1%;
+	height: 80%;
+	width: 8%;
+	opacity: 0.8;
+}
+
+.song-name{
+	padding: 3% 0 0 2%;
+	width: 70%;
+}
+
+/*buttons of all songs section*/
+
+.favorite, .add{
+	background-color: #1A1E33;
+	border-width: 0;
+	color: whitesmoke;
+	width: 5%;
+}
+
+/*aside section*/
+aside{
+	margin-top: 1.5%;
+	display: inline-block;
+	width: 25%;
+	float: right;
+	padding-left: 0%;
+}
+
+/*Similar Artists of the aside section*/
+.similar-list{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-bottom: 5%;
+}
+
+.similar-name{
+	padding: 8% 0 0 5%;
+	width: 50%;
+}
+
+.split{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.split button{
+	padding-bottom: 40%;
+	background-color: #0C1027;
+	color: whitesmoke;
+	border-width: 0;
+}
+
+/*
+.sim-num1{
+	padding-top: 10%;
+}
+*/
+
+.similar-list img{
+	border-radius: 5px;
+	height: 30%;
+	width: 30%;
+}
+
+/*Recently Played of the aside section*/
+.flex-recent{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.recent-list{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin: 2% 0 0 0;
+	width: 100%;
+/*	background-color: #1A1E33;*/
+	height: 10vh;
+}
+
+.recent-list img{
+	padding-top: 2%;
+	height: 80%;
+	width: 15%;
+	opacity: 0.8;
+}
+
+.recent-number{
+	padding-top: 6%;
+	padding-left: 3%;
+}
+
+.recent-name{
+	padding: 3% 0 0 5%;
+	width: 50%;
+}
+
+.recent-favorite{
+	background-color: #0C1027;
+	border-width: 0;
+	color: whitesmoke;
+}
+
+/*Music Player sticky*/
+
+#music-player{
+	width: 100%;
+	background-color: #F1F3F5;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+}
